@@ -11,26 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: -548183353, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: example_mission_1
   m_EditorClassIdentifier: 
-  DisplayName: Very Easy Mission
-  Description: This mission is very easy.
+  DisplayName: CruelCode
+  Description: Cruel Code.
   GeneratorSetting:
-    TimeLimit: 300
-    NumStrikes: 3
+    TimeLimit: 3.746318e+22
+    NumStrikes: 123
     TimeBeforeNeedyActivation: 90
+    FrontFaceOnly: 0
+    OptionalWidgetCount: 5
     ComponentPools:
-    - Count: 1
+    - Count: 10
       AllowedSources: 2
-      ComponentTypes: 02000000
+      ComponentTypes: 
       SpecialComponentType: 0
-      ModTypes: []
-    - Count: 1
-      AllowedSources: 2
-      ComponentTypes: 04000000
-      SpecialComponentType: 0
-      ModTypes: []
-    - Count: 1
-      AllowedSources: 2
-      ComponentTypes: 03000000
-      SpecialComponentType: 0
-      ModTypes: []
+      ModTypes:
+      - TheCruelCode
   PacingEventsEnabled: 0

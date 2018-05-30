@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,8 +42,8 @@
      showgrid="false"
      inkscape:zoom="2.5517241"
      inkscape:cx="127.99583"
-     inkscape:cy="239.53603"
-     inkscape:window-x="54"
+     inkscape:cy="145.48197"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg70"
@@ -295,14 +295,14 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'antro Vectra';-inkscape-font-specification:'antro Vectra';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="293.98318"
+     x="292.8075"
      y="278.5365"
      id="text110-0"><tspan
        sodipodi:role="line"
        id="tspan108-31"
-       x="293.98318"
+       x="292.8075"
        y="278.5365"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift">S</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift">Q</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'antro Vectra';-inkscape-font-specification:'antro Vectra';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
