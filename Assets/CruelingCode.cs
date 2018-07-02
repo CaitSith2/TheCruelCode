@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using TheCode;
@@ -208,18 +210,53 @@ public class CruelingCode : MonoBehaviour
 
 
 #pragma warning disable 414
-    private string TwitchHelpMessage = @"Submit the answer with “!{0} submit 1234”. Query the next number with !{1} query”.";
+    private string TwitchHelpMessage = @"Submit the answer with “!{0} submit 1234”. Submit the answer at time with “!{0} submit 573 at 9:33”. Query the next number with “!{1} query”.";
+	private bool TwitchZenMode;
 #pragma warning restore 414
 
-    KMSelectable[] ProcessTwitchCommand(string command)
+	IEnumerator ProcessTwitchCommand(string command)
     {
         Match m;
 
         command = command.Trim().ToLowerInvariant();
-        if (command == "query")
-            return new[] { ButtonR };
-        else if ((m = Regex.Match(command, @"^submit (\d+)$", RegexOptions.IgnoreCase)).Success)
-            return m.Groups[1].Value.Select(ch => NumberButtons[ch - '0']).Concat(new[] { ButtonS }).ToArray();
-        return null;
+	    if (command == "query")
+	    {
+		    yield return null;
+		    yield return new[] { ButtonR };
+	    }
+        else if ((m = Regex.Match(command, @"^submit (\d+)$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)).Success)
+	    {
+		    yield return null;
+		    yield return m.Groups[1].Value.Select(ch => NumberButtons[ch - '0']).Concat(new[] { ButtonS }).ToArray();
+	    }
+		else if ((m = Regex.Match(command, @"^submit (\d+) at (\d{1,2}(?::\d{1,2}){0,3})$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)).Success)
+	    {
+		    yield return null;
+		    List<int> timeparts = m.Groups[2].Value.Split(':').Select(int.Parse).ToList();
+		    while (timeparts.Count < 4)
+			    timeparts.Insert(0, 0);
+			int targetTime = (timeparts[0] * 86400) + (timeparts[1] * 3600) + (timeparts[2] * 60) + (timeparts[3]);
+		    int pointOfNoReturn = TwitchZenMode ? targetTime - 2 : targetTime + 2;
+
+		    if ((!TwitchZenMode && Bomb.GetTime() < pointOfNoReturn) || (TwitchZenMode && Bomb.GetTime() > pointOfNoReturn))
+		    {
+			    yield return "sendtochaterror Sorry, the target time has gone by already.";
+		    }
+
+		    if (Mathf.Abs(Bomb.GetTime() - targetTime) > 30)
+			    yield return "waiting music";
+
+			while ((int) Bomb.GetTime() != pointOfNoReturn)
+		    {
+			    yield return "trycancel Sorry, the cruel code submission has been cancelled";
+		    }
+
+		    yield return m.Groups[1].Value.Select(ch => NumberButtons[ch - '0']).ToArray();
+		    while ((int) Bomb.GetTime() != targetTime)
+		    {
+			    yield return null;
+		    }
+		    yield return new[] { ButtonS };
+		}
     }
 }
