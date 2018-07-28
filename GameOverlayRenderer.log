@@ -1,0 +1,50 @@
+Fri Jun 22 06:52:26 2018 UTC - Module file name: C:\Program Files (x86)\Steam\gameoverlayrenderer.dll
+Fri Jun 22 06:52:26 2018 UTC - GameID = 341800
+Fri Jun 22 06:52:26 2018 UTC - System page size: 4096
+Fri Jun 22 06:52:26 2018 UTC - Hooking SetCursorPos, GetCursorPos, ShowCursor, and SetCursor
+Fri Jun 22 06:52:26 2018 UTC - Aborting HookFunc because pHookFunctionAddr is null
+Fri Jun 22 06:52:26 2018 UTC - Failed hooking RegisterDeviceNotificationA()
+Fri Jun 22 06:52:26 2018 UTC - Aborting HookFunc because pHookFunctionAddr is null
+Fri Jun 22 06:52:26 2018 UTC - Failed hooking RegisterDeviceNotificationW()
+Fri Jun 22 06:52:26 2018 UTC - Aborting HookFunc because pHookFunctionAddr is null
+Fri Jun 22 06:52:26 2018 UTC - Failed hooking UnregisterDeviceNotification()
+Fri Jun 22 06:52:26 2018 UTC - Modules at GameOverlayRenderer.dll attach
+Fri Jun 22 06:52:26 2018 UTC - 01: mono.exe - (00400000 to 0042D000)
+Fri Jun 22 06:52:26 2018 UTC - 02: ntdll.dll - (77C30000 to 77DBD000)
+Fri Jun 22 06:52:26 2018 UTC - 03: KERNEL32.DLL - (74810000 to 748E0000)
+Fri Jun 22 06:52:26 2018 UTC - 04: KERNELBASE.dll - (74E70000 to 75047000)
+Fri Jun 22 06:52:26 2018 UTC - 05: SHELL32.dll - (75D70000 to 770A3000)
+Fri Jun 22 06:52:26 2018 UTC - 06: mono-2.0-sgen.dll - (10000000 to 10398000)
+Fri Jun 22 06:52:26 2018 UTC - 07: msvcrt.dll - (75330000 to 753ED000)
+Fri Jun 22 06:52:26 2018 UTC - 08: cfgmgr32.dll - (75920000 to 75958000)
+Fri Jun 22 06:52:26 2018 UTC - 09: ucrtbase.dll - (74670000 to 74787000)
+Fri Jun 22 06:52:26 2018 UTC - 10: shcore.dll - (75A00000 to 75A88000)
+Fri Jun 22 06:52:26 2018 UTC - 11: RPCRT4.dll - (75CB0000 to 75D6E000)
+Fri Jun 22 06:52:26 2018 UTC - 12: SspiCli.dll - (74650000 to 74670000)
+Fri Jun 22 06:52:26 2018 UTC - 13: CRYPTBASE.dll - (74640000 to 7464A000)
+Fri Jun 22 06:52:26 2018 UTC - 14: bcryptPrimitives.dll - (75C20000 to 75C77000)
+Fri Jun 22 06:52:26 2018 UTC - 15: WS2_32.dll - (74B30000 to 74B96000)
+Fri Jun 22 06:52:26 2018 UTC - 16: sechost.dll - (74AC0000 to 74B03000)
+Fri Jun 22 06:52:26 2018 UTC - 17: MSWSOCK.dll - (735D0000 to 73625000)
+Fri Jun 22 06:52:26 2018 UTC - 18: combase.dll - (77990000 to 77BD6000)
+Fri Jun 22 06:52:26 2018 UTC - 19: ole32.dll - (75B20000 to 75C17000)
+Fri Jun 22 06:52:26 2018 UTC - 20: windows.storage.dll - (77370000 to 77936000)
+Fri Jun 22 06:52:26 2018 UTC - 21: GDI32.dll - (77BE0000 to 77C02000)
+Fri Jun 22 06:52:26 2018 UTC - 22: gdi32full.dll - (77210000 to 7736E000)
+Fri Jun 22 06:52:26 2018 UTC - 23: advapi32.dll - (74BA0000 to 74C18000)
+Fri Jun 22 06:52:26 2018 UTC - 24: shlwapi.dll - (747A0000 to 747E5000)
+Fri Jun 22 06:52:26 2018 UTC - 25: msvcp_win.dll - (770B0000 to 7712C000)
+Fri Jun 22 06:52:26 2018 UTC - 26: USER32.dll - (74940000 to 74AB5000)
+Fri Jun 22 06:52:26 2018 UTC - 27: win32u.dll - (75AA0000 to 75AB6000)
+Fri Jun 22 06:52:26 2018 UTC - 28: kernel.appcore.dll - (75880000 to 7588E000)
+Fri Jun 22 06:52:26 2018 UTC - 29: OLEAUT32.dll - (75960000 to 759F3000)
+Fri Jun 22 06:52:26 2018 UTC - 30: powrprof.dll - (771C0000 to 77205000)
+Fri Jun 22 06:52:26 2018 UTC - 31: PSAPI.DLL - (747F0000 to 747F6000)
+Fri Jun 22 06:52:26 2018 UTC - 32: profapi.dll - (77C10000 to 77C24000)
+Fri Jun 22 06:52:26 2018 UTC - 33: WINMM.dll - (6A600000 to 6A624000)
+Fri Jun 22 06:52:26 2018 UTC - 34: VERSION.dll - (74550000 to 74558000)
+Fri Jun 22 06:52:26 2018 UTC - 35: WINMMBASE.dll - (6A5D0000 to 6A5F3000)
+Fri Jun 22 06:52:26 2018 UTC - 36: IMM32.DLL - (75C80000 to 75CA5000)
+Fri Jun 22 06:52:26 2018 UTC - 37: gameoverlayrenderer.dll - (624A0000 to 625E4000)
+Fri Jun 22 06:52:26 2018 UTC - ----------------------------
+Fri Jun 22 06:52:28 2018 UTC - GameOverlayRenderer.dll detaching
